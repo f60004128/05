@@ -182,20 +182,55 @@
                    <a href="#"><span class="material-symbols-outlined text-dark link-success">chevron_right</span></a>
                  </div>
    
-                 <div class="d-flex justify-content-end position-relative pt-3">
+                 <div class="d-flex justify-content-end position-relative pt-3 h-100">
                    <button class="btn btn-outline-success me-2">Mark as read</button>
                    <button class="btn btn-primary btn-success ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Reply</button>
                    
                    <!-- card -->
-                   <div class="collapse position-absolute bottom-0 end-0" id="collapseExample">
+                   <!-- <div class="collapse position-absolute bottom-0 end-0" id="collapseExample">
                      <div class="card card-body align-items-end">
                        Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                       <div class="d-flex ">
-                         <button class="btn btn-outline-success px-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Cancel</button>
-                       <button class="btn btn-success px-2">Reply</button>
+                       
+                       <div class="d-flex ">                        
+                        <button class="btn btn-outline-success px-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Cancel</button>
+                        <button class="btn btn-success px-2">Reply</button>
                        </div>
+
                      </div>
-                   </div>  
+                   </div>   -->
+
+                   <!-- card2 -->
+                   <div class="collapseReplyGroup collapse show" id="collapseReply2" style="">
+                    <div class="card border-top-0 rounded-0">
+                      <div class="card-header d-flex align-items-center flex-wrap">
+                        <div class="dropdown">
+                          <button class="btn btn-light border-0 me-4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Body Text<span class="material-symbols-outlined ms-2">arrow_drop_down</span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                        </div>
+                        <div class="d-flex">
+                          <a href="#" class="btn btn-light border-0 btn-sm"><span class="material-symbols-outlined">format_bold</span></a>
+                          <a href="#" class="btn btn-light border-0 btn-sm"><span class="material-symbols-outlined">format_list_bulleted</span></a>
+                          <a href="#" class="btn btn-light border-0 btn-sm"><span class="material-symbols-outlined">format_list_numbered</span></a>
+                          <a href="#" class="btn btn-light border-0 btn-sm"><span class="material-symbols-outlined">image</span></a>
+                          <a href="#" class="btn btn-light border-0 btn-sm"><span class="material-symbols-outlined">link</span></a>
+                          <a href="#" class="btn btn-light border-0 btn-sm"><span class="material-symbols-outlined">code</span></a>
+                        </div>
+                      </div>
+                      <div class="card-body position-relative p-0" style="height: 263px;">
+                        <textarea class="w-100 h-100 py-3 px-4 border-0 focus-ring" name="replyText" id="replyText" placeholder="Reply an answer…"></textarea>
+                        <div class="text-end position-absolute bottom-0 end-0 pe-4 pb-3">
+                          <button type="button" class="btn btn-outline-success py-2 px-8 me-2" data-bs-toggle="collapse" data-bs-target=".collapseReplyGroup" aria-expanded="true" aria-controls="collapseReply1 collapseReply2">Cancel</button>
+                          <button type="button" class="btn btn-success py-2 px-8" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="false" aria-controls="">Reply</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                      
                  </div>
 
